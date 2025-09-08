@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vlog and Favorite Songs</title>
+<style>
+body{ min-height: 100vh;
+  margin: 0;
+  background-color: #d5ecf3;
+  background-image: 
+    linear-gradient(to right, #ccc 1px, transparent 1px),
+    linear-gradient(to bottom, #ccc 1px, transparent 1px);
+  background-size: 40px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;}
+ 
+.video-container {
+  display: flex;
+  gap: 20px;        /* spacing between videos */
+  justify-content: center; /* center them */
+  flex-wrap: wrap;  /* allow wrapping on smaller screens */
+}
+
+.card {
+  flex: 1 1 45%;   /* take ~45% width each */
+  max-width: 450px; /* prevent videos from stretching too much */
+}
+video {
+  width: 100%;      /* fit inside card */
+  height: auto;     /* keep aspect ratio */
+  border-radius: 15px;
+}
+
+</style>
+ 
+</head>
+<body>
+    <header>
+     <h1 style="text-align: center;"> Our vlogs and favorite songs🎶</h1>
+     <p style="text-align: center;">🌸by Group Bahala Na🌸</p>
+    </header>
+<div class="video-container">
+  <div class="card">
+    <h2>📹Arwildan A. Dayag’s Vlog</h2>
+    <video controls autoplay loop>
+      <source src="Afterschool_vlog.mp4" type="video/mp4">
+    </video>
+    <h3>Favorite song ♡</h3>
+    <audio controls autoplay loop>
+      <source src="Until_I_found_you_stephen_sanchez.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="card">
+    <h2>📹Jessica Rayne Maglipon’s Vlog</h2>
+    <video controls autoplay loop>
+      <source src="lv_0_20250902153928_(1).mp4" type="video/mp4">
+    </video>
+    <h3>Favorite song ♡</h3>
+    <audio controls autoplay loop>
+      <source src="Screen_Recording _2025_09_09_022127.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+<div class="card">
+    <h2>📹Rhian Fernandez’s Vlog</h2>
+    <video controls autoplay loop>
+      <source src="lv_0_20250902153928_(1).mp4" type="video/mp4">
+    </video>
+    <h3>Favorite song ♡</h3>
+    <audio controls autoplay loop>
+      <source src="Screen_Recording _2025_09_09_022127.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  
+<footer>
+    <p>Made with ❤️ by: <strong>Dayag, Maglipon, and Fernandez</strong></p>
+  </footer>
+</body>
+</html> 
