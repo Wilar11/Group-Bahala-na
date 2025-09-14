@@ -1,61 +1,150 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Vlog and Favorite Songs</title>
-<style>
-body{ min-height: 100vh;
-  margin: 0;
-  background-color: #d5ecf3;
-  background-image: 
-    linear-gradient(to right, #ccc 1px, transparent 1px),
-    linear-gradient(to bottom, #ccc 1px, transparent 1px);
-  background-size: 40px 40px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Vlog and Favorite Songs</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #B7C9DC;
+      background-image:
+        linear-gradient(#aaa 1px, transparent 1px),
+        linear-gradient(90deg, #aaa 1px, transparent 1px);
+      background-size: 25px 25px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px;}
- 
-.video-container {
-  display: flex;
-  gap: 30px;      
-  justify-content: center; 
-  flex-wrap: wrap-reverse;  
-}
+      padding: 40px;
+    } 
 
-.card {
-  flex: 1 1 50%;   
-  max-width: 460px;
-}
-video {
-  width: 100%;      
-  height: auto;    
-  border-radius: 25px;
-}
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      display: flex;
+      gap: 20px;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      z-index: 100;
+    }
 
-</style>
- 
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      margin: 25px 0;
+      padding: 30px;
+      width: 85%;         
+      max-width: 900px;   
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+      font-size: 2rem; 
+      color: #222;
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+      height: 700px; 
+      border-radius: 40px;
+      border: none;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 1rem;
+    }
+  </style>
 </head>
-<body>
-    <header>
-     <h1 style="text-align: center;"> Our vlogs and favorite songs🎶</h1>
-     <p style="text-align: center;">🌸by Group Bahala Na🌸</p>
-    </header>
-<div class="video-container">
-  <div class="card">
-    <h2>📹Arwildan A. Dayag’s Vlog</h2>
-    <video controls autoplay loop>
-      <source src="Afterschool_vlog.mp4" type="video/mp4">
-    </video>
-    <h3>Favorite song ♡</h3>
-    <audio controls autoplay loop>
-      <source src="Until_I_found_you_stephen_sanchez.mp3" type="audio/mpeg">
-    </audio>
-  </div>
+<!-- changed background and design-->
 
-<footer>
-    <p>Made with ❤️ by: <strong>Dayag, Arwildan</strong></p>
+<body> <!-- removed autoplay -->
+
+  <header>
+    <h1 style="text-align: center;"> Our vlogs and favorite songs🎶</h1>
+    <p style="text-align: center;">🌸by Group Bahala Na🌸</p>
+  </header>
+<!-- added navigation -->
+  <nav>
+    <a href="#dayag">Dayag</a>
+    <a href="#maglipon">Maglipon</a>
+    <a href="#fernandez">Fernandez</a>
+  </nav>
+
+  <div class="card" id="dayag">
+    <h2>📹 Arwildan A. Dayag’s Vlog</h2>
+    <video controls>
+      <source src="Afterschool vlog .mp4" type="video/mp4">
+    </video>
+  </div>
+  <h3>Favorite song ♡</h3>
+  <audio controls>
+    <source src="Until I found you (stephen sanchez).mp3" type="audio/mpeg">
+  </audio> 
+  <hr width="90%"/>
+
+  <div class="card" id="maglipon">
+    <h2>📹 Jessica Rayne Maglipon’s Vlog</h2>
+    <video controls>
+      <source src="lv_0_20250902153928.mp4" type="video/mp4">
+    </video>
+  </div>
+  <h3>Favorite song ♡</h3>
+  <audio controls>
+    <source src="" type="audio/mpeg">
+  </audio> 
+  <hr width="90%"/>
+
+  <div class="card" id="fernandez">
+    <h2>📹 Rhian Fernandez’s Vlog</h2>
+    <video controls>
+      <source src="rhian's vlog - Made with Clipchamp.mp4" type="video/mp4">
+    </video>
+  </div>
+  <h3>Favorite song ♡</h3>
+  <audio controls>
+    <source src="Screen Recording 2025-09-08 003425.mp3" type="audio/mpeg">
+  </audio> 
+  <hr width="90%"/>
+<!-- added feedback section -->
+  <section style="margin-top:30px; text-align:center;">
+    <h2>💬 Leave a Comment</h2>
+    <textarea placeholder="Write your thoughts here..." rows="4" style="width:80%; border-radius:10px; padding:10px;"></textarea><br>
+    <button style="margin-top:10px; padding:10px 20px; border:none; border-radius:10px; background:#0077cc; color:#fff; cursor:pointer;">
+      Submit
+    </button>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by: <strong>Dayag, Maglipon, and Fernandez</strong></p> 
   </footer>
 </body>
-</html> 
+</html>
